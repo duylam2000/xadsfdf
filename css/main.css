@@ -1,0 +1,244 @@
+.section {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.section-right {
+  padding: 0 100px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-left {
+  padding: 0 50px 0 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-form {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bg-1 {
+  background-image: url("../images/1.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.bg-2 {
+  background-color: #f0f1f0;
+}
+
+.bg-3 {
+  background-image: url("../images/5.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.bg-4 {
+  background-color: #323b6c;
+  color: #fff;
+}
+
+.bg-5 {
+  margin-top: -50px;
+  background-image: url("../images/10.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.overlay-black {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.btn-white {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  padding: 5px 15px;
+  margin-top: 25px;
+}
+
+.btn-black {
+  border: 2px solid #000;
+  color: #000;
+  background-color: transparent;
+  padding: 5px 15px;
+  margin-top: 25px;
+}
+
+.material-form .form-group {
+  position: relative;
+}
+
+.material-form input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.material-form input:focus {
+  outline: none;
+}
+.material-form label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.material-form input:focus ~ label,
+.material-form input:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* BOTTOM BARS ================================= */
+.material-form .bar {
+  position: relative;
+  display: block;
+}
+.material-form .bar:before,
+.material-form .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #fff;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.material-form .bar:before {
+  left: 50%;
+}
+.material-form .bar:after {
+  right: 50%;
+}
+
+/* active state */
+.material-form input:focus ~ .bar:before,
+.material-form input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.material-form .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+
+.btn-submit {
+  border-radius: 30px;
+  padding: 7px 40px;
+  margin: 20px auto 0;
+}
+
+.feature {
+  margin-top: 30px;
+}
+
+.feature-list {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 15px;
+}
+
+.feature-list-long {
+  margin-top: 10px;
+  padding-left: 50px;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(6, 170px);
+  grid-gap: 15px;
+}
+
+.icon-3 {
+  margin-left: 35px;
+  width: 250px;
+}
+
+.icon-4 {
+  margin-left: 60px;
+  width: 1000px;
+}
+
+.footer-title {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.section-footer {
+  padding: 0 100px 0 50px;
+}
+.nav-item {
+  padding: 15px;
+  font-size: 24px;
+}
+.nav-link {
+  color: #fff !important;
+}
+
+.brand {
+  width: 60px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
